@@ -1,0 +1,16 @@
+@mixin centeredflex($type: flex, $jc: center, $ai: center) {
+  display: $type;
+  justify-content: $jc;
+  align-items: $ai;
+}
+@mixin coloredbtn(
+  $bgr: $color-accent,
+  $color: $color-secondary-text,
+  $shadow: 0px 4px 4px rgba(0, 0, 0, 0.15),
+  $curs: pointer
+) {
+  background: $bgr;
+  color: $color;
+  box-shadow: $shadow;
+  cursor: $curs;
+}

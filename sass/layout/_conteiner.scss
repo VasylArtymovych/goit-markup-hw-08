@@ -1,0 +1,14 @@
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+.header__container {
+  @include centeredflex($jc: space-between);
+}
+
+.footer__container {
+  @include centeredflex($ai: baseline);
+}

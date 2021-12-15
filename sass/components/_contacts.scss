@@ -1,0 +1,38 @@
+.contacts {
+  @extend %list;
+  @include centeredflex();
+  &__link {
+    @extend %link;
+    color: $color-primery-text;
+    &:hover,
+    &:focus {
+      color: $color-accent;
+    }
+  }
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
+
+.contacts__item--margl + .contacts__item--margl {
+  margin-left: 30px;
+}
+
+.contacts__link--centf {
+  @include centeredflex();
+}
+
+.contacts--footer {
+  display: block;
+}
+.contacts__item--margb:not(:last-child) {
+  margin-bottom: 9px;
+}
+.contacts__link--style {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
