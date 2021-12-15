@@ -1,22 +1,26 @@
 .main-title {
   width: 696px;
-  margin-right: auto;
-  margin-left: auto;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  @include font($fw: 900, $fz: 44px, $lh: 1.36, $ls: 0.06em);
   text-align: center;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $color-secondary-text;
 }
+.main-title--hero {
+  margin-right: auto;
+  margin-left: auto;
+}
 
 .second-title {
-  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: $color-title-text;
+}
+
+.second-title--work,
+.second-title--team,
+.second-title--clients {
+  margin-bottom: 30px;
 }

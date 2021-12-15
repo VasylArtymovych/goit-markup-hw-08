@@ -1,19 +1,16 @@
 .qualities {
   @extend %list;
-  @include centeredflex();
+  margin-bottom: -30px;
   &__item {
-    width: 270px;
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+    margin-bottom: 30px;
   }
   &__img {
     @include centeredflex();
-    width: 270px;
+    width: 100%;
     height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
-    background-color: #f5f4fa;
+    background-color: $bgr-color-btn-list;
   }
   &__icon {
     width: 70px;
@@ -21,18 +18,13 @@
   }
   &__title {
     margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    text-align: center;
+    @include font();
     text-transform: uppercase;
     color: $color-title-text;
   }
   &__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font($fw: 400, $fz: 14px, $lh: 1.71, $ls: 0.03em);
     color: $color-primery-text;
   }
 }

@@ -1,38 +1,32 @@
 .team {
   @extend %list;
-  @include centeredflex();
+  margin-bottom: -30px;
   &__item {
+    margin-bottom: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: $bgr-color-main;
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
   }
   &__photo {
     display: block;
+    width: 100%;
+    height: auto;
   }
   &__description {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
   }
   &__name {
     margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
+    @include font($fw: 500, $fz: 16px, $lh: 1.19, $ls: 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     color: $color-title-text;
   }
   &__position {
     margin-bottom: 16px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.19;
+    @include font($fw: 400, $fz: 16px, $lh: 1.19, $ls: 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     color: $color-primery-text;
   }
 }
