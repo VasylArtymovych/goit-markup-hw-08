@@ -3,19 +3,20 @@
   padding-right: 15px;
   padding-left: 15px;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
+  @media screen and (min-width: $wprt-phone) {
+    width: $wprt-phone;
   }
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
+  @media screen and (min-width: $wprt-tablet) {
+    width: $wprt-tablet;
   }
 
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
+  @media screen and (min-width: $wprt-computer) {
+    width: $wprt-computer;
   }
 }
-.container--marg {
+
+.container--mrgn {
   margin: 0 auto;
 }
 

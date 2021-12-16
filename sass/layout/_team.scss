@@ -1,7 +1,7 @@
 .team {
   @extend %list;
   margin-bottom: -30px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $wprt-tablet) {
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
@@ -14,24 +14,24 @@
     border-radius: 0px 0px 4px 4px;
     background-color: $bgr-color-main;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $wprt-tablet) {
       flex-basis: calc(100% / 2 - 30px);
       margin-right: 30px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $wprt-computer) {
       flex-basis: calc(100% / 4 - 30px);
     }
   }
 
-  &__photo {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
+  // &__photo {
+  //   display: block;
+  //   width: 100%;
+  //   height: auto;
+  // }
   &__description {
     padding-top: 30px;
     padding-bottom: 24px;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $wprt-computer) {
       padding-bottom: 30px;
     }
   }

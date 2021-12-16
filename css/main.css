@@ -293,7 +293,7 @@ button {
 img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -333,7 +333,7 @@ img {
   }
 }
 
-.container--marg {
+.container--mrgn {
   margin: 0 auto;
 }
 
@@ -568,16 +568,16 @@ img {
   }
 }
 
-.qualities {
-  margin-bottom: -30px;
-}
-
 @media screen and (min-width: 768px) {
   .qualities {
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
   }
+}
+
+.qualities .qualities--mrg {
+  margin-bottom: -30px;
 }
 
 .qualities__item {
@@ -700,12 +700,6 @@ img {
   .team__item {
     flex-basis: calc(100% / 4 - 30px);
   }
-}
-
-.team__photo {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 .team__description {
