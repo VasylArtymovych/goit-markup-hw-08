@@ -1,6 +1,6 @@
 .main-title {
   width: 696px;
-  @include font($fw: 900, $fz: 44px, $lh: 1.36, $ls: 0.06em);
+  @include font(900, 44px, 1.36, 0.06em);
   text-align: center;
   text-transform: uppercase;
   color: $color-secondary-text;
@@ -11,11 +11,8 @@
 }
 
 .second-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(700, 36px, 1.17, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: $color-title-text;
 }
 
@@ -23,4 +20,8 @@
 .second-title--team,
 .second-title--clients {
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
