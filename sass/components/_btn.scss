@@ -13,17 +13,17 @@
   }
 }
 
-.menu-btn {
-  @include centeredflex();
-  background-color: transparent;
-  border: none;
-  &:hover,
-  &:focus .menu-btn__icon {
-    fill: $color-accent;
-  }
-  &__icon--close {
-    position: absolute;
-    top: 1px;
-    right: 15px;
-  }
-}
+// .menu-btn {
+//   @include centeredflex();
+//   background-color: transparent;
+//   border: none;
+//   &:hover,
+//   &:focus .menu-btn__icon {
+//     fill: $color-accent;
+//   }
+//   &__icon--close {
+//     position: absolute;
+//     top: 1px;
+//     right: 15px;
+//   }
+// }

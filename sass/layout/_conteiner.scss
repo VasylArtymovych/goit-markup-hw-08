@@ -22,12 +22,7 @@
 
 .header__container {
   @include centeredflex($jc: space-between);
-  position: relative;
 }
-
-// .header__container {
-//     @include centeredflex($jc: space-between);
-// }
 
 .footer__container {
   @include centeredflex($ai: baseline);
