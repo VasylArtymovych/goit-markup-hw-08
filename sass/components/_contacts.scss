@@ -1,6 +1,13 @@
 .contacts {
   @extend %list;
-  @include centeredflex();
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
   &__link {
     @extend %link;
     color: $color-primery-text;
@@ -12,15 +19,17 @@
   &__icon {
     margin-right: 10px;
     fill: currentColor;
+    display: none;
   }
 }
 
-.contacts__item--margl + .contacts__item--margl {
-  margin-left: 30px;
+.contacts__link--email {
+  @include font(500, 24px, 1.17, 0.02em);
 }
-
-.contacts__link--centf {
-  @include centeredflex();
+.contacts__link--tell {
+  @include font(500, 34px, 1.18, 0.02em);
+  color: $color-accent;
+  order: -1;
 }
 
 .contacts--footer {

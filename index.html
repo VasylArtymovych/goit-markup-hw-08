@@ -15,13 +15,23 @@
 
 <body>
 <!-- header -->
-  <!-- <header class="header">
-    <div class="container header__container">
-      <nav class="nav">
-        <a class="logo logo--header" href="">
-          <span class="logo__text">Web</span>Studio
-        </a>
-        <ul class="nav__list">
+  <header class="header">
+    <div class="container container--mrgn header__container">
+      <a class="logo logo--header" href="">
+        <span class="logo__text">Web</span>Studio
+      </a>
+      <button type="button" class="menu-btn">
+        <svg 
+          class="menu-btn__icon" 
+          width="40px" 
+          height="40px" 
+          aria-label="menu-opener">
+          <use href="./images/icons.svg#menu"></use>
+        </svg>
+      </button>
+      <div class="header-menu">
+        <nav class="nav">
+          <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link nav__link--current" href="./index.html">Студия</a>
             </li>
@@ -31,27 +41,54 @@
             <li class="nav__item">
               <a class="nav__link" href="">Контакты</a>
             </li>
+          </ul>
+        </nav>
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contacts__link contacts__link--email" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16px" height="12px">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link contacts__link--tell" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10px" height="16px">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>
+              +380961111111</a>
+          </li>
         </ul>
-      </nav> 
-      
-    <ul class="contacts">
-      <li class="contacts__item contacts__item--margl">
-        <a class="contacts__link contacts__link--centf" href="mailto:info@devstudio.com">
-          <svg class="contacts__icon" width="16px" height="12px">
-            <use href="./images/icons.svg#envelope"></use>
+        <ul class="socials-header ">
+          <li class="socials-header__item">
+            <a href="" class="socials-header__link">
+              Instagram
+            </a>
+          <li class="socials-header__item">
+            <a href="" class="socials-header__link">
+              Twitter
+            </a>
+          <li class="socials-header__item">
+            <a href="" class="socials-header__link">
+              Facebook
+            </a>
+          <li class="socials-header__item">
+            <a href="" class="socials-header__link">
+              LinkedIn
+            </a>
+        </ul>
+        <button type="button" class="menu-btn">
+          <svg 
+            class="menu-btn__icon menu-btn__icon--close"
+            width="40px" 
+            height="40px" 
+            aria-label="menu-closer">
+            <use href="./images/icons.svg#close"></use>
           </svg>
-          info@devstudio.com</a>
-      </li>
-      <li class="contacts__item contacts__item--margl">
-        <a class="contacts__link contacts__link--centf" href="tel:+380961111111">
-          <svg class="contacts__icon" width="10px" height="16px">
-            <use href="./images/icons.svg#smartphone"></use>
-          </svg>
-          +380961111111</a>
-      </li>
-    </ul>
+        </button>
+      </div>
     </div>
-  </header> -->
+  </header>
 
   <main>
 <!--Hero-->
@@ -63,7 +100,7 @@
     </section> -->
     
 <!--Our Qualities-->
-    <!-- <section class="section">
+    <section class="section">
       <div class="container container--mrgn">
       <h2 class="second-title visually-hidden">заголовок</h2>
       <ul class="qualities qualities--mrg">
@@ -105,7 +142,7 @@
         </li>
       </ul>
       </div>
-    </section> -->
+    </section>
 
 <!--What we do-->
       <!-- <section class="section section--padding">
@@ -293,7 +330,7 @@
     </section>
 
 <!--Regular Clients-->
-    <!-- <section class="section">
+    <section class="section">
       <div class="container container--mrgn">
         <h2 class="second-title second-title--clients">Постоянные клиенты</h2>
         <ul class="clients">
@@ -342,7 +379,7 @@
         </ul>
       </div>
     </section>
-  </main> -->
+  </main>
   
 <!--Footer-->
 
