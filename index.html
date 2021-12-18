@@ -16,40 +16,106 @@
 <body>
 <!-- header -->
   <header class="header">
-    <div class="container container--mrgn header__container">
-      <nav class="nav">
-        <a class="logo logo--header" href="">
-          <span class="logo__text">Web</span>Studio
-        </a>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link nav__link--current" href="./index.html">Студия</a>
+    <div class="container header-container">
+      <a class="logo logo--header" href="">
+        <span class="logo__text">Web</span>Studio
+      </a>
+      <button 
+      type="button" 
+      class="menu-open-btn js-open-menu" 
+      aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="40px" height="40px">
+          <use class="menu-open-btn__icon" href="./images/icons.svg#menu"></use>
+        </svg>
+      </button>
+      <div class="header-menu-wrap">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--current" href="./index.html">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts">
+          <li class="contacts__item contacts__item--margl">
+            <a class="contacts__link contacts__link--centf" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16px" height="12px">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="">Контакты</a>
+          <li class="contacts__item contacts__item--margl">
+            <a class="contacts__link contacts__link--centf" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10px" height="16px">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>
+              +380961111111</a>
           </li>
         </ul>
-      </nav>
-      <ul class="contacts">
-        <li class="contacts__item contacts__item--margl">
-          <a class="contacts__link contacts__link--centf" href="mailto:info@devstudio.com">
-            <svg class="contacts__icon" width="16px" height="12px">
-              <use href="./images/icons.svg#envelope"></use>
-            </svg>
-            info@devstudio.com</a>
+      </div>
+    </div>
+    <div class="menu-container js-menu-container is-open" id="mobile-menu">
+      <button 
+      type="button" 
+      class="menu-close-btn js-close-menu">
+        <svg width="40px" height="40px">
+          <use class="menu-open-btn__icon" href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+      <ul class="menu-container__list">
+        <li class="menu-container__item">
+          <a class="menu-container__link menu-container__link--current" href="./index.html">Студия</a>
         </li>
-        <li class="contacts__item contacts__item--margl">
-          <a class="contacts__link contacts__link--centf" href="tel:+380961111111">
-            <svg class="contacts__icon" width="10px" height="16px">
-              <use href="./images/icons.svg#smartphone"></use>
-            </svg>
-            +380961111111</a>
+        <li class="menu-container__item">
+          <a class="menu-container__link" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="menu-container__item">
+          <a class="menu-container__link" href="">Контакты</a>
         </li>
       </ul>
-    </div>
+      <div class="menu-mob-wrap">
+        <ul class="menu-mob-cont">
+          <li class="menu-mob-cont__item">
+            <a class="menu-mob-cont__link menu-mob-cont__link--font" href="tel:+380961111111">
+              +380961111111
+            </a>
+          </li>
+          <li class="menu-mob-cont__item menu-mob-cont__item--margl">
+            <a class="menu-mob-cont__link menu-mob-cont__link--centf" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="mob-social">
+          <li class="mob-social__item">
+            <a href="" class="mob-social__link">
+              Instagram
+            </a>
+          </li>
+          <li class="mob-social__item">
+            <a href="" class="mob-social__link">
+              Twitter
+            </a>
+          </li>
+          <li class="mob-social__item">
+            <a href="" class="mob-social__link">
+              Facebook
+            </a>
+          </li>
+          <li class="mob-social__item">
+            <a href="" class="mob-social__link">
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div> 
   </header>
 
   <main>
@@ -107,7 +173,7 @@
     </section>
 
 <!--What we do-->
-      <!-- <section class="section section--padding">
+      <section class="section section--works section--padding">
         <div class="container container--mrgn">
         <h2 class="second-title second-title--work">Чем мы занимаемся</h2>
         <ul class="works" >
@@ -131,15 +197,15 @@
           </li>
         </ul>
         </div>
-      </section> -->
+      </section>
       
 <!--Our Team-->
     <section class="section section--bgrcolor">
-      <div class="container container--mrgn">
+      <div class="container">
       <h2 class="second-title second-title--team">Наша команда</h2>
       <ul class="team">
         <li class="team__item">
-          <img class="team__photo" src="./images/photo1.jpg" alt="фото сотрудника" width="270">
+          <img class="team__photo" src="./images/photo1.jpg" alt="фото сотрудника">
           <diV class="team__description">
             <h3 class="team__name">Игорь Демьяненко</h3>
             <p class="team__position">Product Designer</p>
@@ -177,7 +243,7 @@
         </li>
         
         <li class="team__item">
-          <img class="team__photo" src="./images/photo2.jpg" alt="фото сотрудника" width="270">
+          <img class="team__photo" src="./images/photo2.jpg" alt="фото сотрудника">
           <diV class="team__description">
             <h3 class="team__name">Ольга Репина</h3>
             <p class="team__position">Frontend Developer</p>
@@ -214,7 +280,7 @@
           </diV>
         </li>
         <li class="team__item">
-          <img class="team__photo" src="./images/photo3.jpg" alt="фото сотрудника" width="270">
+          <img class="team__photo" src="./images/photo3.jpg" alt="фото сотрудника" >
           <diV class="team__description">
             <h3 class="team__name">Николай Тарасов</h3>
             <p class="team__position">Marketing</p>
@@ -251,7 +317,7 @@
           </diV>
         </li>
         <li class="team__item"> 
-          <img class="team__photo" src="./images/photo4.jpg" alt="фото сотрудника" width="270">
+          <img class="team__photo" src="./images/photo4.jpg" alt="фото сотрудника">
           <diV class="team__description">
             <h3 class="team__name">Михаил Ермаков</h3>
             <p class="team__position">UI Designer</p>
@@ -480,6 +546,13 @@
   </div>
 
 <script src="./JS/modal.js"></script>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"></script>
+<script defer src="js/mobile-menu.js"></script>
+
+
 </body>
 </html>
 
