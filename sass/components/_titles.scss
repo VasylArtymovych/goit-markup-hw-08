@@ -1,13 +1,18 @@
 .main-title {
-  width: 696px;
-  @include font(900, 44px, 1.36, 0.06em);
+  max-width: 360px;
+  @include font(900, 26px, 1.62, 0.06em);
   text-align: center;
   text-transform: uppercase;
   color: $color-secondary-text;
+  @media screen and (min-width: $wprt-desktop) {
+    @include font(900, 44px, 1.36, 0.06em);
+    max-width: 696px;
+  }
 }
-.main-title--hero {
+.main-title--mrgn {
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 30px;
 }
 
 .second-title {
@@ -20,7 +25,6 @@
 .second-title--team,
 .second-title--clients {
   margin-bottom: 30px;
-
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }

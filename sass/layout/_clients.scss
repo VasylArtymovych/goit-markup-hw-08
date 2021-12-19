@@ -14,7 +14,7 @@
     @media screen and (min-width: $wprt-tablet) {
       flex-basis: calc(100% / 3 - 30px);
     }
-    @media screen and (min-width: $wprt-computer) {
+    @media screen and (min-width: $wprt-desktop) {
       flex-basis: calc(100% / 6 - 30px);
     }
   }
