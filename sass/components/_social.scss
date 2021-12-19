@@ -41,6 +41,9 @@
 
 .socials-wrap {
   margin-bottom: 60px;
+  @media screen and (min-width: $wprt-desktop) {
+    margin-right: 93px;
+  }
 }
 .socials-text {
   margin-bottom: 20px;
@@ -49,6 +52,10 @@
   text-transform: uppercase;
   text-align: center;
   color: $color-secondary-text;
+
+  @media screen and (min-width: $wprt-desktop) {
+    text-align: left;
+  }
 }
 
 .socials-header {

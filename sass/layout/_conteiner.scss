@@ -20,7 +20,13 @@
   @include centeredflex($jc: space-between);
 }
 
-// .footer__container {
-//   @include centeredflex($jc: space-around);
-//   flex-direction: column;
-// }
+.footer__container {
+  @media screen and (min-width: $wprt-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: $wprt-desktop) {
+    @include centeredflex($ai: baseline);
+  }
+}

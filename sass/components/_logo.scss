@@ -16,4 +16,7 @@
   margin-bottom: 20px;
   text-align: center;
   color: $color-secondary-text;
+  @media screen and (min-width: $wprt-desktop) {
+    text-align: left;
+  }
 }

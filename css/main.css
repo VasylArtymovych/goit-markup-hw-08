@@ -339,6 +339,22 @@ img {
   align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -429,6 +445,12 @@ img {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__btn {
+    margin: 0px;
+  }
+}
+
 .header {
   position: relative;
   padding: 16px 0px;
@@ -481,6 +503,12 @@ img {
   margin-bottom: 20px;
   text-align: center;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    text-align: left;
+  }
 }
 
 .nav {
@@ -591,6 +619,12 @@ img {
 .contacts--footer {
   display: block;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts--footer {
+    text-align: left;
+  }
 }
 
 .contacts__item--margb:not(:last-child) {
@@ -962,6 +996,12 @@ img {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .socials-wrap {
+    margin-right: 93px;
+  }
+}
+
 .socials-text {
   margin-bottom: 20px;
   font-weight: 400;
@@ -972,6 +1012,12 @@ img {
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .socials-text {
+    text-align: left;
+  }
 }
 
 .socials-header {
@@ -1017,12 +1063,27 @@ img {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    margin-bottom: 9px;
+    text-align: left;
+  }
+}
+
 .footer-wrap {
   margin-bottom: 60px;
 }
 
-.subscription-form {
-  width: 100%;
+@media screen and (min-width: 1200px) {
+  .footer-wrap {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-wrap {
+    margin-right: 70px;
+  }
 }
 
 .subscription-form__label {
@@ -1034,6 +1095,12 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription-form__field {
+    display: flex;
+  }
 }
 
 .subscription-form__input {
@@ -1048,6 +1115,19 @@ img {
   background-color: #2f303a;
   color: #ffffff;
   outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .subscription-form__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription-form__input {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .subscription-form__input:focus {

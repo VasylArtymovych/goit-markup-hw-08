@@ -9,9 +9,20 @@
     @include font(400, 14px, 1.71, 0.03em);
     text-align: center;
     color: $color-secondary-text;
+
+    @media screen and (min-width: $wprt-desktop) {
+      margin-bottom: 9px;
+      text-align: left;
+    }
   }
 }
 
 .footer-wrap {
   margin-bottom: 60px;
+  @media screen and (min-width: $wprt-desktop) {
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: $wprt-desktop) {
+    margin-right: 70px;
+  }
 }

@@ -34,6 +34,9 @@
 .contacts--footer {
   display: block;
   text-align: center;
+  @media screen and (min-width: $wprt-desktop) {
+    text-align: left;
+  }
 }
 .contacts__item--margb:not(:last-child) {
   margin-bottom: 5px;
