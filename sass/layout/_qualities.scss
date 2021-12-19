@@ -38,6 +38,9 @@
     @include font();
     text-transform: uppercase;
     color: $color-title-text;
+    @media screen and (min-width: $wprt-tablet) {
+      text-align: start;
+    }
   }
   &__text {
     @include font(400, 14px, 1.71, 0.03em);

@@ -1,12 +1,28 @@
 .contacts {
   @extend %list;
-
+  margin-bottom: -10px;
+  @media screen and (min-width: $wprt-desktop) {
+    @include centeredflex($type: flex, $jc: center, $ai: flex-end);
+    margin-bottom: 0;
+    margin-right: -30x;
+  }
+  &__item {
+    margin-bottom: 10px;
+    @media screen and (min-width: $wprt-desktop) {
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
+  }
   &__link {
     @extend %link;
+    @include font(500, 12px, 1.17, 0.02em);
     color: $color-primery-text;
     &:hover,
     &:focus {
       color: $color-accent;
+    }
+    @media screen and (min-width: $wprt-desktop) {
+      @include font(500, 14px, 1.14, 0.02em);
     }
   }
   &__icon {
@@ -17,14 +33,12 @@
 
 .contacts--footer {
   display: block;
+  text-align: center;
 }
 .contacts__item--margb:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 5px;
 }
 .contacts__link--style {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(400, 14px, 1.71, 0.03em);
   color: rgba(255, 255, 255, 0.6);
 }

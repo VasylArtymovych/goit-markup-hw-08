@@ -1,23 +1,21 @@
 .subscription-form {
+  width: 100%;
   &__label {
-    margin-left: 94px;
     margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font(700, 14px, 1.14, 0.03em);
+    text-align: center;
     text-transform: uppercase;
     color: $color-secondary-text;
   }
   &__field {
-    display: flex;
-    margin-left: 94px;
+    // display: flex;
+    // margin-left: 94px;
   }
   &__input {
-    width: 358px;
+    width: 100%;
     height: 50px;
     padding: 15px;
-    margin-right: 12px;
+    margin-bottom: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -30,9 +28,7 @@
       border-color: $bgr-color-main;
     }
     &::placeholder {
-      font-weight: 400px;
-      font-size: 16px;
-      letter-spacing: 0.03em;
+      @include font(400, 16px, 1.25, 0.03em);
       color: rgba(255, 255, 255, 0.6);
     }
   }

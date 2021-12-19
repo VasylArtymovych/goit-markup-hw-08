@@ -1,6 +1,9 @@
 .header {
   position: relative;
   padding: 16px 0px;
+  @media screen and (min-width: $wprt-tablet) {
+    padding: 0px;
+  }
 }
 
 .header-menu-wrap {
@@ -8,8 +11,6 @@
     display: none;
   }
   @media screen and (min-width: $wprt-tablet) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include centeredflex($jc: space-between);
   }
 }

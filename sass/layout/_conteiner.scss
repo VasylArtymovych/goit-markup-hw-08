@@ -20,6 +20,7 @@
   @include centeredflex($jc: space-between);
 }
 
-.footer__container {
-  @include centeredflex($ai: baseline);
-}
+// .footer__container {
+//   @include centeredflex($jc: space-around);
+//   flex-direction: column;
+// }

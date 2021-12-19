@@ -4,9 +4,14 @@
   background-color: $bgr-color-footer;
 
   &__address {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
     font-style: normal;
     @include font(400, 14px, 1.71, 0.03em);
+    text-align: center;
     color: $color-secondary-text;
   }
+}
+
+.footer-wrap {
+  margin-bottom: 60px;
 }
