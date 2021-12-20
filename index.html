@@ -26,39 +26,57 @@
       aria-expanded="false" 
       aria-controls="mobile-menu">
         <svg width="40px" height="40px">
-          <use class="menu-open-btn__icon" href="./images/icons.svg#menu"></use>
+          <use class="menu-open-btn__icon" href="./images/icons.svg#menu">
+          </use>
         </svg>
       </button>
       <div class="header-menu-wrap">
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link nav__link--current" href="./index.html">Студия</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="./portfolio.html">Портфолио
-
+              <a 
+              class="nav__link nav__link--current" href="./index.html">
+              Студия
               </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="">Контакты
-
+              <a 
+              class="nav__link" 
+              href="./portfolio.html">
+                Портфолио
+              </a>
+            </li>
+            <li class="nav__item">
+              <a 
+              class="nav__link" 
+              href="">
+              Контакты
               </a>
             </li>
           </ul>
         </nav>
         <ul class="contacts">
           <li class="contacts__item contacts__item--margl">
-            <a class="contacts__link contacts__link--centf" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16px" height="12px">
-                <use href="./images/icons.svg#envelope"></use>
+            <a 
+              class="contacts__link contacts__link--centf" href="mailto:info@devstudio.com">
+              <svg 
+                class="contacts__icon" 
+                width="16px" 
+                height="12px">
+                <use href="./images/icons.svg#envelope">   
+                </use>
               </svg>
               info@devstudio.com
             </a>
           </li>
           <li class="contacts__item contacts__item--margl">
-            <a class="contacts__link contacts__link--centf" href="tel:+380961111111">
-              <svg class="contacts__icon" width="10px" height="16px">
+            <a 
+              class="contacts__link contacts__link--centf" 
+              href="tel:+380961111111">
+              <svg 
+                class="contacts__icon" 
+                width="10px" 
+                height="16px">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +380961111111
@@ -72,10 +90,14 @@
 
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button 
-      type="button" 
-      class="menu-close-btn js-close-menu">
+        type="button" 
+        class="menu-close-btn js-close-menu"
+      >
         <svg width="40px" height="40px">
-          <use class="menu-open-btn__icon" href="./images/icons.svg#close"></use>
+          <use 
+          class="menu-open-btn__icon" 
+          href="./images/icons.svg#close"
+          ></use>
         </svg>
       </button>
       <ul class="menu-container__list">
@@ -183,7 +205,7 @@
     </section>
 
 <!--Works-->
-      <section class="section section--works section--padding">
+      <section class="section section--works">
         <div class="container container--mrgn">
         <h2 class="second-title second-title--work">Чем мы занимаемся</h2>
         <ul class="works" >
@@ -602,7 +624,11 @@
 <!--modal-window-->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button type="button" class="modal__btn" data-modal-close>
+      <button 
+      type="button" 
+      class="modal__btn" 
+      data-modal-close
+      >
         <svg class="modal__icon" width="18px" height="18px">
           <use href="./images/icons.svg#close"></use>
         </svg>
@@ -610,41 +636,81 @@
 
 <!-- modal-form -->
       <b class="modal-form__title">Оставьте свои данные, мы вам перезвоним</b>
-      <form action="#" name="modal-form" class="modal-form">
+      <form 
+      action="#" 
+      name="modal-form" 
+      class="modal-form"
+      >
         <label class="modal-form__label">
-          <span class="modal-form__text">Имя</span>
+          <span class="modal-form__text">
+            Имя
+          </span>
           <span class="modal-form__wrap">
-            <input type="text" name="user-name" class="modal-form__input">
-            <svg class="modal-form__icon" width="18px" height="18px">
-              <use href="./images/icons.svg#person-mod"></use>
+            <input 
+            type="text" 
+            name="user-name" class="modal-form__input"
+            >
+            <svg 
+            class="modal-form__icon" 
+            width="18px" 
+            height="18px"
+            >
+              <use href="./images/icons.svg#person-mod">
+              </use>
             </svg>
           </span>
         </label>
 
         <label class="modal-form__label">
-          <span class="modal-form__text">Телефон</span>
+          <span class="modal-form__text">
+            Телефон
+          </span>
           <span class="modal-form__wrap">
-            <input type="tel" name="user-tel" class="modal-form__input">
-            <svg class="modal-form__icon" width="18px" height="18px">
-              <use href="./images/icons.svg#phone-mod"></use>
+            <input 
+            type="tel" 
+            name="user-tel" class="modal-form__input"
+            >
+            <svg 
+            class="modal-form__icon" 
+            width="18px" 
+            height="18px"
+            >
+              <use href="./images/icons.svg#phone-mod">
+              </use>
             </svg>
           </span>
         </label>
 
         <label class="modal-form__label">
-          <span class="modal-form__text">Имя</span>
+          <span class="modal-form__text">
+            Почта
+          </span>
           <span class="modal-form__wrap">
-            <input type="email" name="user-email" class="modal-form__input">
-            <svg class="modal-form__icon" width="18px" height="18px">
-              <use href="./images/icons.svg#email-mod"></use>
+            <input 
+            type="email" 
+            name="user-email" class="modal-form__input"
+            >
+            <svg 
+            class="modal-form__icon" 
+            width="18px" 
+            height="18px"
+            >
+              <use href="./images/icons.svg#email-mod">
+              </use>
             </svg>
           </span>
         </label>
 
         <label class="modal-form__label">
-          <span class="modal-form__text">Комментарий</span>
+          <span class="modal-form__text">
+            Комментарий
+          </span>
           <span class="modal-form__wrap">
-            <textarea name="user__text" cols="30" placeholder="Введите текст" class="modal-form__textarea"></textarea>
+            <textarea 
+            name="user__text" 
+            cols="30" 
+            placeholder="Введите текст" class="modal-form__textarea"
+            ></textarea>
           </span>
         </label>
 
@@ -661,7 +727,8 @@
             width="11px" 
             height="8px"
             >
-              <use href="./images/icons.svg#icon-check"></use>
+              <use href="./images/icons.svg#icon-check"> 
+              </use>
             </svg>
           </span>
           Соглашаюсь с рассылкой и принимаю 
@@ -670,7 +737,11 @@
           </a>
         </label>
 
-        <button type="submit" class="btn modal-form__btn">Отправить</button>
+        <button 
+        type="submit" 
+        class="btn modal-form__btn">
+        Отправить
+        </button>
       </form>
     </div>
   </div>

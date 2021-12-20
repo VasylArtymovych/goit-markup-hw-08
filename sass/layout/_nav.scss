@@ -1,6 +1,7 @@
 .nav {
   @include centeredflex();
   margin-right: 84px;
+  
   @media screen and (min-width: $wprt-deskt) {
     margin-right: 305px;
   }

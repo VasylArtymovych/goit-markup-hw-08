@@ -41,6 +41,7 @@
 
 .socials-wrap {
   margin-bottom: 60px;
+
   @media screen and (min-width: $wprt-deskt) {
     margin-right: 93px;
   }
@@ -71,13 +72,5 @@
     @include font(500, 18px, 1.22, 0.02em);
     height: 18px;
     color: $color-accent;
-
-    // &::after {
-    //   content: '|';
-    //   width: 2px;
-    //   height: 18px;
-    //   // margin-left: 10px;
-    //   color: $color-accent;
-    // }
   }
 }

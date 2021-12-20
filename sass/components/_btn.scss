@@ -7,49 +7,9 @@
   border-radius: 4px;
   @include font(700, 16px, 1.14, 0.06em);
   @include coloredbtn();
+
   &__icon {
     margin-left: 10px;
     fill: $color-secondary-text;
   }
-}
-
-.menu-open-btn {
-  @include centeredflex();
-  background-color: transparent;
-  border: none;
-  &:hover,
-  &:focus .menu-open-btn__icon {
-    fill: $color-accent;
-  }
-  @media screen and (min-width: $wprt-tab) {
-    display: none;
-  }
-}
-
-.menu-close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: transparent;
-  border: none;
-  &:hover,
-  &:focus .menu-close-btn__icon {
-    fill: $color-accent;
-  }
-}
-
-.hero__btn {
-  margin: 0 auto;
-  padding: 10px;
-}
-
-.footer__btn {
-  margin: 0 auto;
-  @media screen and (min-width: $wprt-deskt) {
-    margin: 0px;
-  }
-}
-
-.modal-form__btn {
-  margin: 0 auto;
 }

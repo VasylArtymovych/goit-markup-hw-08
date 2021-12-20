@@ -26,6 +26,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
+
   @media screen and (min-width: $wprt-deskt) {
     @include centeredflex($ai: baseline);
   }

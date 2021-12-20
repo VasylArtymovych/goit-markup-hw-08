@@ -1,6 +1,7 @@
 .contacts {
   @extend %list;
   margin-bottom: -10px;
+
   @media screen and (min-width: $wprt-deskt) {
     @include centeredflex($ai: flex-end);
     margin-bottom: 0;
@@ -8,6 +9,7 @@
   }
   &__item {
     margin-bottom: 10px;
+
     @media screen and (min-width: $wprt-deskt) {
       margin-bottom: 0;
       margin-right: 30px;
@@ -17,12 +19,14 @@
     @extend %link;
     @include font(500, 12px, 1.17, 0.02em);
     color: $color-primery-text;
+
+    @media screen and (min-width: $wprt-deskt) {
+      @include font(500, 14px, 1.14, 0.02em);
+    }
+
     &:hover,
     &:focus {
       color: $color-accent;
-    }
-    @media screen and (min-width: $wprt-deskt) {
-      @include font(500, 14px, 1.14, 0.02em);
     }
   }
   &__icon {

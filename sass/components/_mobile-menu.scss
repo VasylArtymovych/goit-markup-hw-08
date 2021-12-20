@@ -17,12 +17,14 @@
   &__list {
     @extend %list;
   }
+
   &__item {
     @include font(500, 40px, 1.18, 0.02em);
   }
   &__item:not(:last-child) {
     margin-bottom: 32px;
   }
+
   &__link {
     @extend %link;
     color: $color-title-text;
@@ -34,6 +36,34 @@
 
 .menu-container.is-open {
   transform: translateX(0%);
+}
+
+.menu-open-btn {
+  @include centeredflex();
+  background-color: transparent;
+  border: none;
+
+  &:hover,
+  &:focus .menu-open-btn__icon {
+    fill: $color-accent;
+  }
+
+  @media screen and (min-width: $wprt-tab) {
+    display: none;
+  }
+}
+
+.menu-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+
+  &:hover,
+  &:focus .menu-close-btn__icon {
+    fill: $color-accent;
+  }
 }
 
 .menu-mob-cont {
