@@ -3,7 +3,7 @@
   font-family: Raleway;
   @include font(700, 24px, 1.17, 0.03em);
   color: $color-title-text;
-  @media screen and (min-width: $wprt-desktop) {
+  @media screen and (min-width: $wprt-deskt) {
     @include font(700, 26px, 1.19, 0.03em);
   }
   &__text {
@@ -16,7 +16,7 @@
   margin-bottom: 20px;
   text-align: center;
   color: $color-secondary-text;
-  @media screen and (min-width: $wprt-desktop) {
+  @media screen and (min-width: $wprt-deskt) {
     text-align: left;
   }
 }

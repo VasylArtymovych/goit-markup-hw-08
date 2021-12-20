@@ -36,18 +36,19 @@
   transform: translateX(0%);
 }
 
-.menu-mob-wrap {
-}
 .menu-mob-cont {
   @extend %list;
+
   &__item:not(:last-child) {
     margin-bottom: 32px;
   }
+
   &__link {
     @extend %link;
     @include font(500, 24px, 1.17, 0.02em);
     color: $color-primery-text;
   }
+
   &__link--font {
     @include font(500, 34px, 1.18, 0.02em);
     color: $color-accent;
@@ -57,11 +58,13 @@
 .mob-social {
   @extend %list;
   display: flex;
+
   &__item:not(:last-child) {
     margin-right: 10px;
     padding-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
+
   &__link {
     @extend %link;
     @include font(500, 18px, 1.22, 0.02em);

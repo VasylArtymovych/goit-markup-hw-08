@@ -21,7 +21,7 @@
   &:focus .menu-open-btn__icon {
     fill: $color-accent;
   }
-  @media screen and (min-width: $wprt-tablet) {
+  @media screen and (min-width: $wprt-tab) {
     display: none;
   }
 }
@@ -45,7 +45,7 @@
 
 .footer__btn {
   margin: 0 auto;
-  @media screen and (min-width: $wprt-desktop) {
+  @media screen and (min-width: $wprt-deskt) {
     margin: 0px;
   }
 }

@@ -1,7 +1,7 @@
 .header {
   position: relative;
   padding: 16px 0px;
-  @media screen and (min-width: $wprt-tablet) {
+  @media screen and (min-width: $wprt-tab) {
     padding: 0px;
   }
 }
@@ -10,7 +10,7 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and (min-width: $wprt-tablet) {
+  @media screen and (min-width: $wprt-tab) {
     @include centeredflex($jc: space-between);
   }
 }

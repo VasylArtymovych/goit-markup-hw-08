@@ -1,14 +1,14 @@
 .contacts {
   @extend %list;
   margin-bottom: -10px;
-  @media screen and (min-width: $wprt-desktop) {
-    @include centeredflex($type: flex, $jc: center, $ai: flex-end);
+  @media screen and (min-width: $wprt-deskt) {
+    @include centeredflex($ai: flex-end);
     margin-bottom: 0;
     margin-right: -30px;
   }
   &__item {
     margin-bottom: 10px;
-    @media screen and (min-width: $wprt-desktop) {
+    @media screen and (min-width: $wprt-deskt) {
       margin-bottom: 0;
       margin-right: 30px;
     }
@@ -21,7 +21,7 @@
     &:focus {
       color: $color-accent;
     }
-    @media screen and (min-width: $wprt-desktop) {
+    @media screen and (min-width: $wprt-deskt) {
       @include font(500, 14px, 1.14, 0.02em);
     }
   }
@@ -34,7 +34,7 @@
 .contacts--footer {
   display: block;
   text-align: center;
-  @media screen and (min-width: $wprt-desktop) {
+  @media screen and (min-width: $wprt-deskt) {
     text-align: left;
   }
 }

@@ -30,7 +30,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  @media screen and (min-width: $wprt-phone) and (max-width: 1199px) {
+  @media screen and (min-width: $wprt-mob) and (max-width: 1199px) {
     max-width: 450px;
     min-height: 609px;
   }
@@ -44,9 +44,7 @@
     position: absolute;
     top: 8px;
     right: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centeredflex();
     width: 30px;
     height: 30px;
     border-radius: 50%;

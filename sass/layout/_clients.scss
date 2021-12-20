@@ -11,10 +11,10 @@
     margin-right: 30px;
     margin-bottom: 30px;
 
-    @media screen and (min-width: $wprt-tablet) {
+    @media screen and (min-width: $wprt-tab) {
       flex-basis: calc(100% / 3 - 30px);
     }
-    @media screen and (min-width: $wprt-desktop) {
+    @media screen and (min-width: $wprt-deskt) {
       flex-basis: calc(100% / 6 - 30px);
     }
   }

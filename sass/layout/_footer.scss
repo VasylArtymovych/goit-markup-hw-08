@@ -10,7 +10,7 @@
     text-align: center;
     color: $color-secondary-text;
 
-    @media screen and (min-width: $wprt-desktop) {
+    @media screen and (min-width: $wprt-deskt) {
       margin-bottom: 9px;
       text-align: left;
     }
@@ -19,10 +19,10 @@
 
 .footer-wrap {
   margin-bottom: 60px;
-  @media screen and (min-width: $wprt-desktop) {
+  @media screen and (min-width: $wprt-deskt) {
     margin-bottom: 0px;
   }
-  @media screen and (min-width: $wprt-desktop) {
+  @media screen and (min-width: $wprt-deskt) {
     margin-right: 70px;
   }
 }

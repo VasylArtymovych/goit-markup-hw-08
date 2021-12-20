@@ -4,7 +4,7 @@
   text-align: center;
   text-transform: uppercase;
   color: $color-secondary-text;
-  @media screen and (min-width: $wprt-desktop) {
+  @media screen and (min-width: $wprt-deskt) {
     @include font(900, 44px, 1.36, 0.06em);
     max-width: 696px;
   }

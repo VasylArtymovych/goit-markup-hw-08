@@ -6,6 +6,7 @@
 .socials__item {
   width: 44px;
   height: 44px;
+
   &:not(:last-child) {
     margin-right: 10px;
   }
@@ -15,22 +16,21 @@
   @extend %link;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centeredflex();
   border-radius: 50px;
   color: $color-icons;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     background-color: $color-accent;
     color: $color-secondary-text;
   }
-  &--bgrcolor {
-    background: rgba(255, 255, 255, 0.1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}
+.socials__link--bgrcolor {
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials__icon {
@@ -41,7 +41,7 @@
 
 .socials-wrap {
   margin-bottom: 60px;
-  @media screen and (min-width: $wprt-desktop) {
+  @media screen and (min-width: $wprt-deskt) {
     margin-right: 93px;
   }
 }
@@ -53,7 +53,7 @@
   text-align: center;
   color: $color-secondary-text;
 
-  @media screen and (min-width: $wprt-desktop) {
+  @media screen and (min-width: $wprt-deskt) {
     text-align: left;
   }
 }
@@ -61,21 +61,23 @@
 .socials-header {
   @extend %list;
   @include centeredflex();
+
   &__item:not(:last-child) {
     margin-right: 10px;
   }
+
   &__link {
     @extend %link;
     @include font(500, 18px, 1.22, 0.02em);
     height: 18px;
     color: $color-accent;
 
-    &::after {
-      content: '|';
-      width: 2px;
-      height: 18px;
-      // margin-left: 10px;
-      color: $color-accent;
-    }
+    // &::after {
+    //   content: '|';
+    //   width: 2px;
+    //   height: 18px;
+    //   // margin-left: 10px;
+    //   color: $color-accent;
+    // }
   }
 }

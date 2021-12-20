@@ -1,6 +1,7 @@
 .works {
   @extend %list;
   @include centeredflex();
+
   &__item {
     position: relative;
     margin-right: 30px;
@@ -8,9 +9,11 @@
       margin-right: 0;
     }
   }
+
   &__img {
     display: block;
   }
+
   &__text {
     position: absolute;
     bottom: 0;

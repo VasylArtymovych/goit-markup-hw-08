@@ -12,7 +12,7 @@
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/hero/bgr-mobx2.jpg');
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $wprt-tab) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/hero/bgr-tabl.jpg');
     @media (min-device-pixel-ratio: 2px), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -20,7 +20,7 @@
         url('../images/hero/bgr-tablx2.jpg');
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $wprt-deskt) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/hero/bgr-desktop.jpg');
     @media (min-device-pixel-ratio: 2px), (min-resolution: 192dpi), (min-resolution: 2dppx) {

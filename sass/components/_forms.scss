@@ -7,7 +7,7 @@
     color: $color-secondary-text;
   }
   &__field {
-    @media screen and (min-width: $wprt-desktop) {
+    @media screen and (min-width: $wprt-deskt) {
       display: flex;
     }
   }
@@ -24,10 +24,10 @@
     color: $color-secondary-text;
     outline: none;
 
-    @media screen and (min-width: $wprt-tablet) {
+    @media screen and (min-width: $wprt-tab) {
       width: 450px;
     }
-    @media screen and (min-width: $wprt-desktop) {
+    @media screen and (min-width: $wprt-deskt) {
       width: 358px;
       margin-right: 12px;
     }
@@ -106,15 +106,13 @@
 
 .modal-form__policy {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include centeredflex();
   margin: 0 auto 30px;
   padding-left: 16px;
   width: 424px;
   @include font(400, 14px, 1.71, 0.03em);
   color: $color-primery-text;
-  @media screen and (min-width: $wprt-phone) and (max-width: 1199px) {
+  @media screen and (min-width: $wprt-mob) and (max-width: 1199px) {
     max-width: 370px;
     @include font(400, 12px, 1.17, 0.03em);
   }
@@ -129,9 +127,7 @@
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include centeredflex();
   width: 16px;
   height: 15px;
   border: 2px solid $color-title-text;
