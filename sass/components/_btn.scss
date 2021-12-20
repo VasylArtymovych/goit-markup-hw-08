@@ -13,11 +13,6 @@
   }
 }
 
-.hero__btn {
-  margin: 0 auto;
-  padding: 10px;
-}
-
 .menu-open-btn {
   @include centeredflex();
   background-color: transparent;
@@ -26,7 +21,7 @@
   &:focus .menu-open-btn__icon {
     fill: $color-accent;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $wprt-tablet) {
     display: none;
   }
 }
@@ -43,9 +38,18 @@
   }
 }
 
+.hero__btn {
+  margin: 0 auto;
+  padding: 10px;
+}
+
 .footer__btn {
   margin: 0 auto;
   @media screen and (min-width: $wprt-desktop) {
     margin: 0px;
   }
+}
+
+.modal-form__btn {
+  margin: 0 auto;
 }

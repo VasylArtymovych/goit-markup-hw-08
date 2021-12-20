@@ -4,7 +4,7 @@
   @media screen and (min-width: $wprt-desktop) {
     @include centeredflex($type: flex, $jc: center, $ai: flex-end);
     margin-bottom: 0;
-    margin-right: -30x;
+    margin-right: -30px;
   }
   &__item {
     margin-bottom: 10px;

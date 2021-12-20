@@ -45,11 +45,8 @@
 .modal-form__title {
   display: block;
   margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include font(700, 20px, 1.15, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: $color-title-text;
 }
 
@@ -60,10 +57,7 @@
 
 .modal-form__text {
   margin-bottom: 4px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @include font(400, 12px, 1.17, 0.01em);
   color: $color-primery-text;
 }
 
@@ -105,10 +99,7 @@
   padding: 12px 16px;
   margin-bottom: 20px;
   &::placeholder {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
+    @include font(400, 14px, 1.14, 0.01em);
     color: rgba(117, 117, 117, 0.5);
   }
 }
@@ -121,20 +112,16 @@
   margin: 0 auto 30px;
   padding-left: 16px;
   width: 424px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(400, 14px, 1.71, 0.03em);
   color: $color-primery-text;
+  @media screen and (min-width: $wprt-phone) and (max-width: 1199px) {
+    max-width: 370px;
+    @include font(400, 12px, 1.17, 0.03em);
+  }
 }
 
 .modal-form__check {
   margin-right: 9px;
-}
-
-.modal-form__link {
-  margin-left: 4px;
-  color: $color-accent;
 }
 
 .modal-form__cust-check {
@@ -155,4 +142,9 @@
     background-color: $color-accent;
     border: none;
   }
+}
+
+.modal-form__link {
+  margin-left: 4px;
+  color: $color-accent;
 }

@@ -57,15 +57,18 @@
 .mob-social {
   @extend %list;
   display: flex;
-  margin-top: 65px;
   &__item:not(:last-child) {
     margin-right: 10px;
     padding-right: 10px;
-    border-right: 1px solid $color-accent;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
   &__link {
     @extend %link;
     @include font(500, 18px, 1.22, 0.02em);
     color: $color-accent;
   }
+}
+
+.mob-social--mrgn {
+  margin-top: 65px;
 }

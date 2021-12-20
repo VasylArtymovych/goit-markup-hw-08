@@ -36,10 +36,14 @@
               <a class="nav__link nav__link--current" href="./index.html">Студия</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="./portfolio.html">Портфолио</a>
+              <a class="nav__link" href="./portfolio.html">Портфолио
+
+              </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="">Контакты</a>
+              <a class="nav__link" href="">Контакты
+
+              </a>
             </li>
           </ul>
         </nav>
@@ -49,18 +53,23 @@
               <svg class="contacts__icon" width="16px" height="12px">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
-              info@devstudio.com</a>
+              info@devstudio.com
+            </a>
           </li>
           <li class="contacts__item contacts__item--margl">
             <a class="contacts__link contacts__link--centf" href="tel:+380961111111">
               <svg class="contacts__icon" width="10px" height="16px">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
-              +380961111111</a>
+              +380961111111
+            </a>
           </li>
         </ul>
       </div>
     </div>
+
+<!-- mobile-menu -->
+
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button 
       type="button" 
@@ -93,7 +102,7 @@
             </a>
           </li>
         </ul>
-        <ul class="mob-social">
+        <ul class="mob-social mob-social--mrgn">
           <li class="mob-social__item">
             <a href="" class="mob-social__link">
               Instagram
@@ -173,7 +182,7 @@
       </div>
     </section>
 
-<!--What we do-->
+<!--Works-->
       <section class="section section--works section--padding">
         <div class="container container--mrgn">
         <h2 class="second-title second-title--work">Чем мы занимаемся</h2>
@@ -227,7 +236,7 @@
         </div>
       </section>
       
-<!--Our Team-->
+<!--Team-->
     <section class="section section--bgrcolor">
       <div class="container">
       <h2 class="second-title second-title--team">Наша команда</h2>
@@ -522,8 +531,7 @@
   </main>
   
 <!--Footer-->
-
-<footer class="footer">
+  <footer class="footer">
     <div class="container footer__container">
       <div class="footer-wrap">
         <a class="logo footer__logo" href="WebStudio"> 
@@ -591,7 +599,7 @@
     </div>
   </footer>
 
-<!--Modal window-->
+<!--modal-window-->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="modal__btn" data-modal-close>
@@ -599,7 +607,8 @@
           <use href="./images/icons.svg#close"></use>
         </svg>
       </button>
-<!---------------Modal form ---------------->
+
+<!-- modal-form -->
       <b class="modal-form__title">Оставьте свои данные, мы вам перезвоним</b>
       <form action="#" name="modal-form" class="modal-form">
         <label class="modal-form__label">
@@ -640,9 +649,18 @@
         </label>
 
         <label class="modal-form__policy">
-          <input type="checkbox" name="policy" value="agree" class="modal-form__check visually-hidden">
+          <input 
+          type="checkbox" 
+          name="policy" 
+          value="agree" 
+          class="modal-form__check visually-hidden"
+          >
           <span class="modal-form__cust-check">
-            <svg class="checkbox-icon" width="11px" height="8px">
+            <svg 
+            class="checkbox-icon"
+            width="11px" 
+            height="8px"
+            >
               <use href="./images/icons.svg#icon-check"></use>
             </svg>
           </span>
@@ -652,7 +670,7 @@
           </a>
         </label>
 
-        <button type="submit" class="btn btn--cent">Отправить</button>
+        <button type="submit" class="btn modal-form__btn">Отправить</button>
       </form>
     </div>
   </div>
