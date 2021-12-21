@@ -28,10 +28,6 @@
     color: $color-secondary-text;
   }
 }
-.socials__link--bgrcolor {
-  background: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .socials__icon {
   width: 20px;
@@ -57,6 +53,13 @@
   @media screen and (min-width: $wprt-deskt) {
     text-align: left;
   }
+}
+
+.socials__link--footer {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.socials__icon--footer {
+  color: $color-secondary-text;
 }
 
 .socials-header {

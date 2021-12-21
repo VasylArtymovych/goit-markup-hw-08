@@ -17,9 +17,13 @@
 }
 
 .second-title {
-  @include font(700, 36px, 1.17, 0.03em);
+  @include font(700, 28px, 1.17, 0.03em);
   text-align: center;
   color: $color-title-text;
+
+  @media screen and (min-width: $wprt-deskt) {
+    @include font(700, 36px, 1.17, 0.03em);
+  }
 }
 
 .second-title--work,

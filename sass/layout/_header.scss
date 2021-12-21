@@ -1,6 +1,7 @@
 .header {
   position: relative;
   padding: 16px 0px;
+  border-bottom: 1px solid #ececec;
   @media screen and (min-width: $wprt-tab) {
     padding: 0px;
   }

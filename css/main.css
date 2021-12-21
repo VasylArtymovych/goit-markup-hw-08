@@ -407,6 +407,7 @@ img {
 .header {
   position: relative;
   padding: 16px 0px;
+  border-bottom: 1px solid #ececec;
 }
 
 @media screen and (min-width: 768px) {
@@ -668,11 +669,20 @@ img {
 
 .second-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .second-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
 }
 
 .second-title--work,
@@ -939,11 +949,6 @@ img {
   color: #ffffff;
 }
 
-.socials__link--bgrcolor {
-  background: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .socials__icon {
   width: 20px;
   height: 20px;
@@ -976,6 +981,14 @@ img {
   .socials-text {
     text-align: left;
   }
+}
+
+.socials__link--footer {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.socials__icon--footer {
+  color: #ffffff;
 }
 
 .socials-header {
@@ -1271,14 +1284,15 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
   font-family: inherit;
-  color: var(--title-text-color);
+  color: #212121;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-list__btn:hover, .btn-list__btn:focus {
   background: #2196f3;
   color: #ffffff;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1) 0px 1px 2px rgba(0, 0, 0, 0.08) 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .btn-list--mrg {
